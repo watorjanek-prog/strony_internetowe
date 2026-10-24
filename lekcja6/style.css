@@ -35,10 +35,16 @@ nav a {
 
 .photo-item {
   /* TODO: dodaj float: left, width: 30%, margin: 1.5%, position: relative */
+  float: left;
+  width: 30%;
+  margin: 1.5%;
+  position: relative;
 }
 
 .photo-item img {
   /* TODO: nadaj obrazkom w .photo-item szerokość 100% i display: block */
+  width:100%;
+  display: block;
 }
 
 .photo-caption {
@@ -54,5 +60,15 @@ footer {
 }
 
 /* TODO: dodaj regułę @media dla ekranów do 768px (.photo-item width: 46%) */
-
+@media  (max-width: 768px ){
+  .photo-item{
+    width:46%;
+  }
+}
 /* TODO: dodaj regułę @media dla ekranów do 480px (.photo-item width: 96%, float: none) */
+@media  (max-width: 480px ){
+  .photo-item{
+    width:96%;
+    float: none;
+  }
+}
